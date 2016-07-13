@@ -11,4 +11,6 @@ int main(){
     return 0;
 }
 ```
-##For more info read header files ```upstring.h``` and ```utf8.h```
+For more info read header files 
+* ```upstring.h``` 
+* ```utf8.h```
