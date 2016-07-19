@@ -1,7 +1,6 @@
 #ifndef UTF8_H
 #define UTF8_H
 
-#include <stdio.h>
 #include <stdlib.h>
 
 unsigned int ord(char *,unsigned char *);
