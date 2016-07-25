@@ -2,11 +2,13 @@
 //two string compare
 char upComp(upstring a, upstring b){
     int i;
+    unsigned int j;
     if(upLength(a)!=upLength(b))
         return 0;
-    else if(upCount(a)!=upCount(b))
+    j  = upCount(a);
+    if(j!=upCount(b))
         return 0;
-    i=memcmp(a.text,b.text,a.length);
+    i=memcmp(a.text,b.text,j);
     if(i==0) return 1;
     else return 0;
 }
