@@ -103,11 +103,8 @@ void upConsoleWrite(upstring s){
     upWrite(stdout,s);
 }
 void upConsoleWriteln(upstring s){
-    upstring str = upClone(s), n = upString("\n");
-    upAppend(&str,n);
-    upConsoleWrite(str);
-    free(str.text);
-    free(n.text);
+    upConsoleWrite(s);
+    printf("\n");
 }
 
 //Read until char
